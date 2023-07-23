@@ -1,0 +1,86 @@
+/* Estilos del Formulario */
+
+#container {
+    /* display: ; */
+    width: 100vh;
+    position: absolute;
+    /* justify-content: center; */
+    align-items: center;
+    height: 80vh;
+    z-index: 100;
+    top: 40%;
+    left: 36%;
+    display: block;
+    display: none;
+}
+
+#container #overlay {
+    width: 200%;
+    height: 200%;
+    position: fixed;
+    background-color: wheat;
+    opacity: 0.2;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    /* No mostrar el blur de desenfocado */
+    display: block;  
+}
+
+#container #registrationForm {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 400px;
+    height: 400px;
+    background-color: rgb(35, 59, 12);
+    z-index: 20;
+    border-radius: 10px;
+}
+#container #registrationForm #close-tag {
+    display: block;
+    position: absolute;
+    background-color: transparent;
+    font-size: 34px;
+    top: 0;
+    right: 340px;
+}
+
+#container #registrationForm #close-tag:hover {
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+#container #registrationForm input {
+    width: 200px;
+    padding: 6.5px;
+    border-radius: 8px;
+    border: 1px solid transparent;
+}
+#container #registrationForm span {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    text-align: start;
+}
+#container #registrationForm button {
+    padding: 10px;
+    margin-top: 18px;
+    border-radius: 30px;
+    background-color: rgb(12, 170, 49);
+    border: 1px solid transparent;
+}
+#container #registrationForm button:hover {
+    background-color: rgb(20, 238, 41);
+    border: 1px solid rgb(58, 138, 46);
+    cursor: pointer;
+}
+@media screen and (max-width: 706px) { 
+    #container {
+        display: block;
+        left: 100px;
+    }
+}
