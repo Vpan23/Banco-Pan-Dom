@@ -60,8 +60,6 @@ body {
 #banco-inicio .navbar-banco #menu-1, #menu-2 {
     display: none;
 }
-
-
 #banco-inicio .navbar-rg li {
     list-style: none;
     margin: 15px;
@@ -133,7 +131,7 @@ body {
 
 
 
-@media screen and (max-width: 706px) {
+@media screen and (max-width: 832px) {
     #banco-inicio .navbar-banco {
         padding: 8px;
         display: flex;
@@ -175,9 +173,6 @@ body {
         font-size: 33px;
         margin-top: 15px;
     }
-    #banco-inicio .navbar-banco #menu-1 {
-        display: block;
-    }
     #banco-inicio .navbar-banco #menu-1:hover {
         opacity: 0.5;
         cursor: pointer;
@@ -205,7 +200,7 @@ body {
         flex-wrap: wrap;
     }
     .contenedor .background .contenido-background .titulo-background h2 {
-        font-size: 48px;
+        font-size: 56px;
         display: flex;
         flex-wrap: wrap;        
         align-items: center;
@@ -213,6 +208,55 @@ body {
     }
     #banco-inicio .contenedor .background .contenido-background .boton-background {
         font-size: 25px;
+        padding: 4px 18px;
+        min-width: 90%;
+    }
+
+/* Contenido */
+
+    .contenido {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: fit-content;
+        background-color: rgb(68, 112, 67);
+        min-height: 500px;
+        position: absolute;
+        top: 60%;
+        z-index: -100;
+        padding: 25px;
+        
+    } 
+    .contenido .titulo-contenido {
+        margin: 20px ;
+    }
+    .contenido .titulo-contenido ul {
+        margin: 40px;
+    }
+    .contenido .titulo-contenido ul li {
+        font-size: 14px;
+        margin-top: 8px;
+    }
+
+}
+@media screen and (min-width: 832px) and (max-width: 1120px) {
+    .contenedor {
+        display: block;
+        position: absolute;
+        top: 5px;
+        width: 100%;
+        min-height: 600px;
+        z-index: -1;
+    }
+    .contenedor .background .contenido-background .titulo-background h2 {
+        font-size: 68px;
+        display: flex;
+        flex-wrap: wrap;        
+        align-items: center;
+        text-align: center;
+    }
+    #banco-inicio .contenedor .background .contenido-background .boton-background {
+        font-size: 35px;
         padding: 4px 18px;
     }
 }

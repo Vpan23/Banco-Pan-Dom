@@ -70,17 +70,23 @@
     padding: 10px;
     margin-top: 18px;
     border-radius: 30px;
-    background-color: rgb(12, 170, 49);
+    background-color: rgb(101, 166, 41);
     border: 1px solid transparent;
 }
 #container #registrationForm button:hover {
-    background-color: rgb(20, 238, 41);
+    background-color: rgb(2, 131, 15);
     border: 1px solid rgb(58, 138, 46);
     cursor: pointer;
 }
-@media screen and (max-width: 706px) { 
+@media screen and (max-width: 832px) { 
     #container {
-        display: block;
-        left: 100px;
+        display: none;
+        left: 20%;
+    }
+}
+@media screen and (min-width: 832px) and (max-width: 1120px) { 
+    #container {
+        display: none;
+        left: 32%;
     }
 }
