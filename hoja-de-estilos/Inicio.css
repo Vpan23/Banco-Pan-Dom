@@ -219,9 +219,10 @@ body {
         position: absolute;
         margin: 0;
         padding: 0;
-        top: 243%;
+        bottom: -180%;
         background-color: rgb(68, 112, 67);
         width: 100%;
+        z-index: 100;
     }
     #footer .teri {
         margin: 15px;
@@ -341,10 +342,6 @@ body {
         font-size: 14px;
         margin-top: 8px;
     }
-
-    /* Contenido del Iconos con ref */
-    /* Contenido */
-    /* Contenido del Iconos con ref */
     #contenido-completo {
         display: block;
         justify-content: center;
@@ -391,7 +388,9 @@ body {
     #contenido-completo .contenido-iconos .caja-contenedor .contenido-caja {
         font-size: 14px;
     }
-
+    #footer {
+        bottom: -250%;
+    }
 }
 /* verificado */
 @media screen and (min-width: 460px) and (max-width: 720px) {   
